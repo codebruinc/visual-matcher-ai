@@ -1,8 +1,8 @@
-# Visual Matcher AI <�
+# Visual Matcher AI 🎯
 
 A powerful visual comparison tool designed specifically for AI coding agents to achieve pixel-perfect website matching. Born from real-world experience building 1:1 website clones with AI assistance.
 
-## =� Features
+## ✨ Features
 
 - **Pixel-Perfect Comparison**: Advanced image comparison using Puppeteer, Sharp, and Pixelmatch
 - **Smart Scroll Detection**: Automatically finds optimal scroll positions for best matching
@@ -11,7 +11,7 @@ A powerful visual comparison tool designed specifically for AI coding agents to 
 - **CLI & API**: Both command-line interface and programmatic access
 - **Detailed Reporting**: Comprehensive similarity scores and visual diff generation
 
-## =� Installation
+## 📦 Installation
 
 ### Global Installation (CLI)
 ```bash
@@ -23,7 +23,7 @@ npm install -g visual-matcher-ai
 npm install visual-matcher-ai
 ```
 
-## =� CLI Usage
+## 🖥️ CLI Usage
 
 ### Basic Comparison
 ```bash
@@ -42,17 +42,17 @@ visual-matcher watch -u http://localhost:3000 -r ./reference.png --interval 15
 
 ### Advanced Options
 ```bash
-visual-matcher compare \\
-  --url http://localhost:3000 \\
-  --reference ./target-design.png \\
-  --output ./results \\
-  --width 1920 \\
-  --height 880 \\
-  --scroll-y 900 \\
+visual-matcher compare \
+  --url http://localhost:3000 \
+  --reference ./target-design.png \
+  --output ./results \
+  --width 1920 \
+  --height 880 \
+  --scroll-y 900 \
   --threshold 0.1
 ```
 
-## =� API Usage
+## 🔧 API Usage
 
 ### Quick Comparison
 ```javascript
@@ -88,7 +88,7 @@ await matcher.continuousMatch('http://localhost:3000', './reference.png', {
   onUpdate: (result) => {
     console.log(`Current similarity: ${result.similarity}%`);
     if (result.similarity > 95) {
-      console.log('<� Target achieved!');
+      console.log('🎯 Target achieved!');
     }
   }
 });
@@ -96,16 +96,16 @@ await matcher.continuousMatch('http://localhost:3000', './reference.png', {
 await matcher.close();
 ```
 
-## > AI Agent Integration
+## 🤖 AI Agent Integration
 
 ### Claude Code
 ```markdown
 I'm building a website clone and need to achieve 95%+ visual similarity.
 
 1. Start visual monitoring:
-   \`\`\`bash
+   ```bash
    visual-matcher watch -u http://localhost:3000 -r ./target.png --interval 10
-   \`\`\`
+   ```
 
 2. Make incremental changes to match the reference
 3. Monitor similarity scores in real-time
@@ -133,7 +133,7 @@ EXPOSE 3000
 CMD ["visual-matcher", "watch", "-u", "http://localhost:3000", "-r", "/workspace/reference.png"]
 ```
 
-## <� Workflow Examples
+## 📋 Workflow Examples
 
 ### Perfect Landing Page Clone
 ```bash
@@ -159,7 +159,7 @@ const heroMatch = await matcher.compareImages('./hero-reference.png', './current
 console.log(`Header: ${headerMatch.similarity}%, Hero: ${heroMatch.similarity}%`);
 ```
 
-## =' Configuration Options
+## ⚙️ Configuration Options
 
 ### VisualMatcher Options
 ```javascript
@@ -181,13 +181,13 @@ console.log(`Header: ${headerMatch.similarity}%, Hero: ${heroMatch.similarity}%`
 }
 ```
 
-## =� Understanding Results
+## 📊 Understanding Results
 
 ### Similarity Scores
-- **95-100%**: Pixel-perfect match (
-- **85-94%**: Excellent match 
-- **70-84%**: Good match, minor tweaks needed �
-- **<70%**: Major structural differences L
+- **95-100%**: Pixel-perfect match ✨
+- **85-94%**: Excellent match ✅
+- **70-84%**: Good match, minor tweaks needed ⚠️
+- **<70%**: Major structural differences ❌
 
 ### Optimization Strategy
 1. **Start with major layout issues** (backgrounds, positioning)
@@ -196,7 +196,7 @@ console.log(`Header: ${headerMatch.similarity}%, Hero: ${heroMatch.similarity}%`
 4. **Focus on 5-10% improvements** rather than 1-2% tweaks
 5. **Test at optimal scroll position** for accurate comparison
 
-## =� Common Issues & Solutions
+## 🛠️ Common Issues & Solutions
 
 ### Browser Compatibility
 ```bash
@@ -224,13 +224,13 @@ await page.goto(url, {
 });
 ```
 
-## > Contributing
+## 🤝 Contributing
 
 We welcome contributions! This tool was created from real experience building pixel-perfect clones with AI coding agents.
 
 ### Development Setup
 ```bash
-git clone https://github.com/codebru/visual-matcher-ai.git
+git clone https://github.com/codebruinc/visual-matcher-ai.git
 cd visual-matcher-ai
 npm install
 npm run test
@@ -241,11 +241,11 @@ npm run test
 npm run example  # Run CodeBru example
 ```
 
-## =� License
+## 📄 License
 
-MIT � CodeBru Team
+MIT © 2025 CodeBru, Inc.
 
-## < Success Stories
+## 🎉 Success Stories
 
 This tool was battle-tested while building a 1:1 clone of CodeBru.com, achieving 86% similarity through systematic optimization. Key learnings:
 
@@ -256,4 +256,4 @@ This tool was battle-tested while building a 1:1 clone of CodeBru.com, achieving
 
 ---
 
-Built with d for the AI coding community. Happy cloning! <�
+Built with ❤️ for the AI coding community by [CodeBru.com](https://codebru.com). Happy cloning! 🚀
